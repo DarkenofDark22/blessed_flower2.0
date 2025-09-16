@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "chapters"
+    label: "Глави"
+    folder: "content/chapters"
+    create: true
+    fields:
+      - { label: "Назва", name: "title", widget: "string" }
+      - { label: "Зображення", name: "image", widget: "image" }
+      - { label: "Текст", name: "body", widget: "markdown" }
